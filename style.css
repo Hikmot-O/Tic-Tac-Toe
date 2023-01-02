@@ -1,0 +1,75 @@
+body{
+    background-image: linear-gradient(90deg, rgb(248, 109, 133)0%, rgb(182, 6, 182)100%);
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 25rem;
+    width: 25rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif; 
+    
+}
+
+.cell{
+    width: calc(400px/3);
+    height: calc(400px/3);
+    background-color: pink;
+    color: rgb(182, 6, 182);
+    text-align: center;
+    font-size: 5rem;
+}
+
+.row:first-child, .row:nth-child(2){
+    
+    border-bottom: rgb(182, 6, 182) 2px solid;
+}
+
+.cell:first-child{
+    border-right: rgb(182, 6, 182) 2px solid;
+}
+
+.cell:last-child{
+    border-left: rgb(182, 6, 182) 2px solid;
+}
+
+.row, .score-board{
+    display: flex;
+}
+
+.popup{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    background-color: rgb(248, 26, 248);
+    border: solid 1px pink;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    height: 200px;
+    width: 200px;
+    visibility: hidden;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.popup p{
+    text-align: center;
+    margin: auto;
+}
+.bg-black{
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+}
+
+.top{
+    width:  500px;
+}
